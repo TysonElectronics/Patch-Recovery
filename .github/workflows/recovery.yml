@@ -6,7 +6,7 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://transfer.sh/(RECOMMENDED)'
+        default: 'https://file.io/lac6jm3MalrE'
 
 env:
   RECOVERY_URL: https://oshi.at/Rpjg
@@ -26,9 +26,7 @@ jobs:
 
     - name: Fetch image from URL
       run: |
-        ls
-        pwd
-        wget ${{github.event.inputs.RECOVERY_URL }}
+       wget ${{github.event.inputs.RECOVERY_URL }}
 
     - name: Patch Process-1
       run: |
